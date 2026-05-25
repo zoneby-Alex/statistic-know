@@ -1,0 +1,14 @@
+{
+  "name": "statistic-know",
+  "version": "1.0.0",
+  "description": "生物医学统计知识库 - 医学统计学·生物统计学 | VitePress文档站",
+  "scripts": {
+    "docs:dev": "vitepress dev Statistical-Know",
+    "docs:build": "vitepress build Statistical-Know",
+    "docs:preview": "vitepress preview Statistical-Know"
+  },
+  "devDependencies": {
+    "markdown-it-mathjax3": "^4.3.2",
+    "vitepress": "^1.6.4"
+  }
+}
