@@ -167,7 +167,7 @@ export default defineConfig({
     docFooter: { prev: '上一篇', next: '下一篇' },
     lastUpdated: { text: '最后更新' },
     editLink: {
-      pattern: 'https://github.com/yourname/statistic-know/edit/main/Statistical-Know/:path',
+      pattern: 'https://github.com/zoneby-Alex/statistic-know/edit/main/Statistical-Know/:path',
       text: '在 GitHub 上编辑此页',
     },
     socialLinks: [
