@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { pagefindPlugin, chineseSearchOptimize } from 'vitepress-plugin-pagefind'
 
 const sidebar = {
   '/0-路线导览/': [
@@ -150,19 +151,6 @@ export default defineConfig({
       '/8-统计软件栈/': sidebar['/8-统计软件栈/'],
       '/9-拓展资料/': sidebar['/9-拓展资料/'],
     },
-    search: {
-      provider: 'local',
-      options: {
-        translations: {
-          button: { buttonText: '搜索文档' },
-          modal: {
-            noResultsText: '未找到相关结果',
-            resetButtonTitle: '清除查询',
-            footer: { selectText: '选择', navigateText: '切换', closeText: '关闭' },
-          },
-        },
-      },
-    },
     outline: { level: [2, 3], label: '页面导航' },
     docFooter: { prev: '上一篇', next: '下一篇' },
     lastUpdated: { text: '最后更新' },
@@ -175,5 +163,14 @@ export default defineConfig({
     ],
   },
   markdown: { math: true, lineNumbers: true },
-  vite: { server: { host: true, port: 5173 } },
+  vite: {
+    plugins: [pagefindPlugin({
+      customSearchQuery: chineseSearchOptimize,
+      btnPlaceholder: '搜索文档',
+      placeholder: '搜索文档',
+      emptyText: '未找到相关结果',
+      heading: '共 {{searchResult}} 条结果',
+    })],
+    server: { host: true, port: 5173 },
+  },
 })

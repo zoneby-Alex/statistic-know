@@ -10,5 +10,8 @@
   "devDependencies": {
     "markdown-it-mathjax3": "^4.3.2",
     "vitepress": "^1.6.4"
+  },
+  "dependencies": {
+    "vitepress-plugin-pagefind": "^0.4.20"
   }
 }
