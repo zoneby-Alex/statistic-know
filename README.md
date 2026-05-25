@@ -2,6 +2,8 @@
 
 融合《医学统计学》第八版(李康、贺佳)与《生物统计学》第六版(李春喜、姜丽娜)的系统化知识库。
 
+**在线访问**: https://zoneby-Alex.github.io/statistic-know/
+
 ## 知识体系
 
 | 模块 | 内容 |
@@ -64,4 +66,4 @@ statistic-know/
 
 ## 许可证
 
-MIT
+[MIT](./LICENSE)
